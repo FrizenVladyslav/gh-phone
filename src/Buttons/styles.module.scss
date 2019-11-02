@@ -1,0 +1,29 @@
+@mixin mode-color($firstColor: #000, $secondColor: '#000') {
+  span {
+    &:first-child { color: $firstColor }
+    &:last-child { color: $secondColor }
+  }
+}
+
+.phone {
+  width: 200px;
+  z-index: 2;
+  margin: 0 auto -4px;
+  border-radius: 12px;
+  overflow: hidden;
+  > button {
+    position: relative;
+    width: 33.3%;
+    height: 30px;
+    z-index: 2;
+    overflow: hidden;
+  }
+}
+
+.button {
+  @include mode-color(#000, #0fb0c1)
+}
+
+.numMode {
+  @include mode-color(#0fb0c1, #000)
+}

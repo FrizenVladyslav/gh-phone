@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.phone {
+  position: relative;
+  height: 440px;
+  width: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  overflow: hidden;
+  &:before {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background-image: url('../phone.png');
+    background-position: center;
+  }
+}
+
+.message {
+  padding-top: 10px;
+  overflow: auto;
+  font-size: 14px;
+  background-color: #fff;
+  width: 145px;
+  height: 200px;
+  margin: 0 auto;
+  > span {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+}
+
+.emptyMessage {
+  color: gray;
+}
+
+.resetBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 10em;
+  z-index: 2;
+  position: absolute;
+  top: 61.4%;
+  right: calc(50% - 25px);
+}

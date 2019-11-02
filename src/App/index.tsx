@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
-import Phone from '../Buttons'
+import Buttons from '../Buttons'
 import { IButtonValues } from 'types'
 
 import styles from './styles.module.scss'
@@ -81,7 +81,7 @@ class App extends Component {
           <button onClick={this.resetMessage} className={styles.resetBtn}>
             Reset
           </button>
-          <Phone
+          <Buttons
             numMode={numMode}
             buttonsValues={this.buttonsValues}
             onClick={this.onPressButton}
